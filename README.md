@@ -1,2 +1,14 @@
-# TPI--Desarrollo-Web
-Trabajo Final Integrador de la materia Introducción al Desarrollo Web
+# TPI-Desarrollo-Web
+Grupo 47
+
+## Integrantes
+
+● Avalos Victoria Inés
+
+● Peralta Cassutti Noah Nicanor
+
+● Gabriela María Sanchez
+
+● Estrella Cardozo
+
+● Bertorello Santiago Nicolas
