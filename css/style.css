@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Viga&display=swap');
+
+
+:root{
+    --color-fondo: rgb(249, 238, 234);
+    --color-lineas: rgb(0, 0, 0, 0.66);
+    --color-linea-invisible:rgb(0, 0, 0, 0);
+    --color-primero:rgb(182, 226, 211);
+    --color-segundo: rgb(196, 220, 253);
+    --color-tercero: rgb(235, 203, 222);
+    --color-cuarto:rgb(246, 241, 147);
+    --color-quinto:rgb(163, 255, 172);
+    --color-sexto:rgb(255, 119, 183);
+    --color-septimo: rgb(89, 86, 116);
+    --letra-titulo: "Viga", sans-serif;
+    --letra-subtitulo: "Montserrat", sans-serif;
+    --letra-texto: ;
+    --letra-divertida: "Atma", system-ui;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
