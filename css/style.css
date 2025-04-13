@@ -92,7 +92,7 @@ body{
     align-content: center;
     
 }
-/*Titulos de las secciones de manera general(eventos-tematica-catalogo)*/
+/*Titulos sobresalientes de las secciones afectando de manera general(eventos-tematica-catalogo)*/
 .titulo-seccion h2{
     font-size: 3.20rem;
     font-family: var(--letra-subtitulo);
@@ -145,6 +145,7 @@ body{
     
 }
 
+/*--FIN de los estilos de las secciones en general(evento-tematica-catalogo)--*/
 
 
 /*----primera seccion - eventos----*/
@@ -152,15 +153,21 @@ body{
 #seccion-1-evento{
    background-color: var(--color-primero);
    justify-content: space-around;
-   gap:150px 50px;
+   gap: 40px;
 
 }
 #titulo-evento{
     background-color: var(--color-primero);
 
 }
-#subtitulo-seccion-evento{
-  align-self: self-start;
+.texto-seccion{
+    margin-left: 40px;
+    margin-bottom: 55px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 #subtitulo-seccion-evento h3, span{
@@ -170,9 +177,8 @@ body{
 }
 #subtitulo-seccion-evento  span{
     color: #FFFFFF;
-    background-color: var(--color-sexto);
-    
 }
+
 #seccion-1-evento div p{
     margin-top: 40px;
     width: 600px;
