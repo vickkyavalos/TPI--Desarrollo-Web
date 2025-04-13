@@ -107,6 +107,17 @@ body{
     
 }
 
+.linea-top {
+    background-image: repeating-linear-gradient(60deg, var(--color-lineas), var(--color-lineas) 60px, transparent 60px, transparent 60.05px, var(--color-lineas) 60px), repeating-linear-gradient(90deg, var(--color-lineas), var(--color-lineas) 40px, transparent 0, transparent 30px,var(--color-linea-invisible) 80px), repeating-linear-gradient(180deg, #000000, #000000 28.5px, transparent 30px, transparent 48.05px, #000000 49px), repeating-linear-gradient(270deg, #000000, #000000 28.5px, transparent 30px, transparent 48.05px, #000000e1 49px);
+    background-size: 0 0, 100% 6px, 0 0 , 0 0;
+    background-position: 0 0, 0 5px, 0 0, 0 0;
+    background-repeat: no-repeat;   
+    }
+
+
+
+
+
 /*----primera seccion - eventos----*/
 
 #seccion-1-evento{
