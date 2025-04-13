@@ -28,7 +28,8 @@ body{
     
 }
 
-/*Comienza Main*/
+/*---Comienza Main----*/
+
 /*---Seccion Portada de inicio---*/
 .container-portada{
     display: flex;
@@ -72,8 +73,9 @@ body{
 
 /*FIN PORTADA INICIO*/
 
-/*Seciones continuas*/
-/*espacio secciones general(eventos-tematica-catalogo-) */
+/*----Seciones continuas----*/
+/*----espacio secciones general(eventos-tematica-catalogo-) ----*/
+
 .conteiner-espacio-secciones{
     display: flex;
     flex-direction: column;
@@ -87,20 +89,61 @@ body{
     
     
 }
+/*Titulos de las secciones de manera general(eventos-tematica-catalogo)*/
+.titulo-seccion h3{
+    font-size: 3.20rem;
+    font-family: var(--letra-subtitulo);
+    font-weight: 400;
+    font-style: normal;
+}
+.titulo-seccion{
+    height: fit-content;
+    position: relative;
+    top: -80px;
+    left: 10px;
+    padding: 20px 20px 20px 20px; 
+    border-radius: 30px 30px 0 0;
+    
+    
+}
 
-/*primera seccion - eventos*/
+/*----primera seccion - eventos----*/
+
 #seccion-1-evento{
     background-color: var(--color-primero);
 
 }
 
-/*segunda seccion - tematica*/
+#titulo-evento{
+    background-color: var(--color-primero);
+
+}
+
+/*fin seccion - evento*/
+
+/*-----segunda seccion - temática-----*/
+
 #seccion-2-tematica{
     background-color: var(--color-segundo);
 }
 
+#titulo-tematica{
+    background-color: var(--color-segundo);
+    left: 200px;
+}
 
-/*tercera seccion - catálogo*/
+/*fin seccion - temática*/
+
+/*-----tercera seccion - catálogo------*/
+
 #seccion-3-catalogo{
     background-color: var(--color-tercero);
 }
+
+#titulo-catalogo{
+    background-color: var(--color-tercero);
+    left: 450px;
+
+}
+
+/*fin seccion - catálogo*/
