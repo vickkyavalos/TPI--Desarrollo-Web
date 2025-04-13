@@ -22,3 +22,24 @@
     margin: 0;
     padding:0;
 }
+
+body{
+    background-color: var(--color-fondo);
+    
+}
+
+
+.container-portada{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0px 80px 0px;
+}
+
+.figura-geometrica{
+    background-image: url("../assets/img/cuadrado-y-circulo.png");
+    background-repeat: no-repeat;
+    width: 529px;
+    height: 422px;
+    padding: 86px 0 100px 60px ;
+    
+}
