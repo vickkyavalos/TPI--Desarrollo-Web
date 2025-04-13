@@ -14,21 +14,22 @@
     --color-septimo: rgb(89, 86, 116);
     --letra-titulo: "Viga", sans-serif;
     --letra-subtitulo: "Montserrat", sans-serif;
-    --letra-texto: ;
+    --letra-texto: "Montserrat", sans-serif;
     --letra-divertida: "Atma", system-ui;
 }
-
+/*Eliminacion de margenes y padding predefinidos*/
 *{
     margin: 0;
     padding:0;
 }
-
+/*body*/
 body{
     background-color: var(--color-fondo);
     
 }
 
-
+/*Comienza Main*/
+/*---Seccion Portada de inicio---*/
 .container-portada{
     display: flex;
     justify-content: space-around;
@@ -43,3 +44,29 @@ body{
     padding: 86px 0 100px 60px ;
     
 }
+
+.texto-portada{
+    gap: 50px;
+}
+
+.container-portada h1{
+    font-family: var(--letra-titulo);
+    font-size: 4rem;
+}
+
+.container-portada p{
+    font-family: var(--letra-divertida);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+    position: relative;
+    right:20px;
+}
+
+.container-portada img{
+
+    align-self: center;
+    width: 287px;
+    height: 345px;
+}
+
