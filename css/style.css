@@ -14,11 +14,147 @@
     --color-septimo: rgb(89, 86, 116);
     --letra-titulo: "Viga", sans-serif;
     --letra-subtitulo: "Montserrat", sans-serif;
-    --letra-texto: ;
+    --letra-texto: "Montserrat", sans-serif;
     --letra-divertida: "Atma", system-ui;
 }
-
+/*Eliminacion de margenes y padding predefinidos*/
 *{
     margin: 0;
     padding:0;
 }
+/*body*/
+body{
+    background-color: var(--color-fondo);
+    
+}
+
+/*---Comienza Main----*/
+
+/*---Seccion Portada de inicio---*/
+.container-portada{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0px 80px 0px;
+}
+
+.figura-geometrica{
+    background-image: url("../assets/img/cuadrado-y-circulo.png");
+    background-repeat: no-repeat;
+    width: 529px;
+    height: 422px;
+    padding: 86px 0 100px 60px ;
+    
+}
+
+.texto-portada{
+    gap: 50px;
+}
+
+.container-portada h1{
+    font-family: var(--letra-titulo);
+    font-size: 4rem;
+}
+
+.container-portada p{
+    font-family: var(--letra-divertida);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+    position: relative;
+    right:20px;
+}
+
+.container-portada img{
+
+    align-self: center;
+    width: 287px;
+    height: 345px;
+}
+
+/*FIN PORTADA INICIO*/
+
+/*----Seciones continuas----*/
+/*----espacio secciones general(eventos-tematica-catalogo-) ----*/
+
+.conteiner-espacio-secciones{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/*container seccion (eventos-tematica-catalogo-)*/
+.container-seccion{
+    display: flex;
+    height: 659px;
+    
+    
+}
+/*Titulos de las secciones de manera general(eventos-tematica-catalogo)*/
+.titulo-seccion h3{
+    font-size: 3.20rem;
+    font-family: var(--letra-subtitulo);
+    font-weight: 400;
+    font-style: normal;
+}
+.titulo-seccion{
+    height: fit-content;
+    position: relative;
+    top: -80px;
+    left: 10px;
+    padding: 20px 20px 20px 20px; 
+    border-radius: 30px 30px 0 0;
+    
+    
+}
+
+.linea-top {
+    background-image: repeating-linear-gradient(60deg, var(--color-lineas), var(--color-lineas) 60px, transparent 60px, transparent 60.05px, var(--color-lineas) 60px), repeating-linear-gradient(90deg, var(--color-lineas), var(--color-lineas) 40px, transparent 0, transparent 30px,var(--color-linea-invisible) 80px), repeating-linear-gradient(180deg, #000000, #000000 28.5px, transparent 30px, transparent 48.05px, #000000 49px), repeating-linear-gradient(270deg, #000000, #000000 28.5px, transparent 30px, transparent 48.05px, #000000e1 49px);
+    background-size: 0 0, 100% 6px, 0 0 , 0 0;
+    background-position: 0 0, 0 5px, 0 0, 0 0;
+    background-repeat: no-repeat;   
+    }
+
+
+
+
+
+/*----primera seccion - eventos----*/
+
+#seccion-1-evento{
+    background-color: var(--color-primero);
+
+}
+
+#titulo-evento{
+    background-color: var(--color-primero);
+
+}
+
+/*fin seccion - evento*/
+
+/*-----segunda seccion - temática-----*/
+
+#seccion-2-tematica{
+    background-color: var(--color-segundo);
+}
+
+#titulo-tematica{
+    background-color: var(--color-segundo);
+    left: 200px;
+}
+
+/*fin seccion - temática*/
+
+/*-----tercera seccion - catálogo------*/
+
+#seccion-3-catalogo{
+    background-color: var(--color-tercero);
+}
+
+#titulo-catalogo{
+    background-color: var(--color-tercero);
+    left: 450px;
+
+}
+
+/*fin seccion - catálogo*/
