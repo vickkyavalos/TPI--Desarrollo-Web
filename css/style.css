@@ -12,6 +12,7 @@
     --color-quinto:rgb(163, 255, 172);
     --color-sexto:rgb(255, 119, 183);
     --color-septimo: rgb(89, 86, 116);
+    --color-letra:rgb(0, 0, 0, 0.88);
     --letra-titulo: "Viga", sans-serif;
     --letra-subtitulo: "Montserrat", sans-serif;
     --letra-texto: "Montserrat", sans-serif;
@@ -25,7 +26,7 @@
 /*body*/
 body{
     background-color: var(--color-fondo);
-    
+    color: var(--color-letra);
 }
 
 /*---Comienza Main----*/
@@ -76,7 +77,7 @@ body{
 /*----Seciones continuas----*/
 /*----espacio secciones general(eventos-tematica-catalogo-) ----*/
 
-.conteiner-espacio-secciones{
+.container-espacio-secciones{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -86,11 +87,13 @@ body{
 .container-seccion{
     display: flex;
     height: 659px;
-    
+    position: relative;
+    align-items: center;
+    align-content: center;
     
 }
-/*Titulos de las secciones de manera general(eventos-tematica-catalogo)*/
-.titulo-seccion h3{
+/*Titulos sobresalientes de las secciones afectando de manera general(eventos-tematica-catalogo)*/
+.titulo-seccion h2{
     font-size: 3.20rem;
     font-family: var(--letra-subtitulo);
     font-weight: 400;
@@ -98,7 +101,8 @@ body{
 }
 .titulo-seccion{
     height: fit-content;
-    position: relative;
+    z-index: 1;
+    position: absolute;
     top: -80px;
     left: 10px;
     padding: 20px 20px 20px 20px; 
@@ -106,7 +110,26 @@ body{
     
     
 }
+/* tipografía Subtitulos(h3) de cada seccion*/
+.subtitulo{
+    font-family: var(--letra-subtitulo);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+/*tipografía parrafo de cada seccion*/
+.parrafo{
+    font-family: var(--letra-texto);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+}
 
+
+/*borde superior secciones*/
 .linea-top {
     background-image: repeating-linear-gradient(60deg, var(--color-lineas), var(--color-lineas) 60px, transparent 60px, transparent 60.05px, var(--color-lineas) 60px), repeating-linear-gradient(90deg, var(--color-lineas), var(--color-lineas) 40px, transparent 0, transparent 30px,var(--color-linea-invisible) 80px), repeating-linear-gradient(180deg, #000000, #000000 28.5px, transparent 30px, transparent 48.05px, #000000 49px), repeating-linear-gradient(270deg, #000000, #000000 28.5px, transparent 30px, transparent 48.05px, #000000e1 49px);
     background-size: 0 0, 100% 6px, 0 0 , 0 0;
@@ -115,20 +138,67 @@ body{
     }
 
 
+.linea-titulo {
+    background-image: url("../assets/img/lineas-en-titulos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
+/*--FIN de los estilos de las secciones en general(evento-tematica-catalogo)--*/
 
 
 /*----primera seccion - eventos----*/
 
 #seccion-1-evento{
-    background-color: var(--color-primero);
+   background-color: var(--color-primero);
+   justify-content: space-around;
+   gap: 40px;
 
 }
-
 #titulo-evento{
     background-color: var(--color-primero);
 
 }
+.texto-seccion{
+    margin-left: 40px;
+    margin-bottom: 55px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+#subtitulo-seccion-evento h3, span{
+
+    width: fit-content;
+    background-color: var(--color-sexto);
+}
+#subtitulo-seccion-evento  span{
+    color: #FFFFFF;
+}
+
+#seccion-1-evento div p{
+    margin-top: 40px;
+    width: 600px;
+}
+
+
+.container-img{
+   width: 100%;
+   max-width: 500px;
+   
+}
+
+.imagen-seccion{
+   width: 100%;
+   height: auto;
+   
+}
+
+
+
 
 /*fin seccion - evento*/
 
