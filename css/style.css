@@ -70,3 +70,37 @@ body{
     height: 345px;
 }
 
+/*FIN PORTADA INICIO*/
+
+/*Seciones continuas*/
+/*espacio secciones general(eventos-tematica-catalogo-) */
+.conteiner-espacio-secciones{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/*container seccion (eventos-tematica-catalogo-)*/
+.container-seccion{
+    display: flex;
+    height: 659px;
+    
+    
+}
+
+/*primera seccion - eventos*/
+#seccion-1-evento{
+    background-color: var(--color-primero);
+
+}
+
+/*segunda seccion - tematica*/
+#seccion-2-tematica{
+    background-color: var(--color-segundo);
+}
+
+
+/*tercera seccion - catálogo*/
+#seccion-3-catalogo{
+    background-color: var(--color-tercero);
+}
