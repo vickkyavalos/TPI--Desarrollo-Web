@@ -82,16 +82,20 @@ section {
 }
 
 .container-portada img{
-
+    padding-bottom: 60px;
     align-self: center;
     width: 287px;
     height: 345px;
 }
 
+.cajadepregunta{
+    width: 200px;
+}
+
 /* se agrega box 1 para configurar bordes personalizados */
 .box1 {
     background: linear-gradient(to bottom right, #cfe3ff, #fbc0d3);
-    border-radius: 10px; 
+    border-radius: 16px; 
     padding: 60px;
     margin: 0% 150px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -103,9 +107,9 @@ section {
 
 .box {
     background: linear-gradient(to bottom right, #cfe3ff, #fbc0d3);
-    border-radius: 10px; 
-    padding: 60px;
-    margin: 20px 0;
+    border-radius: 16px; 
+    padding: 40px;
+    margin: 20px ;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     font-family: 'Atma',cursive;
@@ -164,7 +168,7 @@ section {
         width: -50px;
     }
 
-   
+
 .nube1 {
         position: relative;
         top: 20px;
@@ -180,43 +184,24 @@ section {
     }
 .nube3 {
         position: relative;
-        top: -20px;
-        left: 900px;
+        top: -10px;
+        left: 200px;
         width: 290px;
     }
 .nube4 {
         position: relative;
-        top: 100px;
-        left: 1100px;
+        top: 0px;
+        left: 800px;
         width: 310px;
     }
 
-footer {
-    text-align: center;
-    padding: 30px 10px;
-    font-size: 14px;
-    background-color: 
-    #C4DCFD;
-    
+.fondo-nube{
+    background-image: url("../assets/img/nubecita.png");
+    background-position: right;
 }
 
-footer p{
-    margin: 10px 0;
-}
-.contacto {
-    text-align: left;
-    padding: 10px;
-    font-size: 14px;
-}
 
-.newsletter {
-    margin: 10px 0;
-}
 
-input {
-    padding: 8px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
+
+
 
