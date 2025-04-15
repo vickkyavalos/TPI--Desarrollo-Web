@@ -9,16 +9,21 @@
 <body>
     <!--------------------------header -------------------------->
     <header>
-        <div class="logo">
-            <img id="logo" src="./assets/img/LOGO.png" alt="imagen del logo">
+        <div id="logo-container">
+            <img id="logo" src="./assets/icons/logo.svg" alt="imagen del logo">
         </div>
-        <nav>
-            <ul class="navegacion">
+        <div class="navbar">
+            <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
+        <!-- Contenedor para el icono User -->
+        <div id="icon-container">
+            <a href=""><img id="icono" src="/assets/icons/person-fill.svg" alt="Icono"></a>
+        </div>
+    </header>
     </header>
 
     <!--------------------------portada -------------------------->
@@ -73,12 +78,10 @@
         </section>
     </main>
      <!--------------------------seccion cupcake -------------------------->
-    <section id="fondoCupcake" class="container-cupcake">
-        <div class="fondo">
+    <section class="container-cupcake">
         <div class="cupcake">
-            <img id="imgCupcake" src="./assets/img/cupcake.png" alt="imagen de un cupcake">
+            <a href=""><img id="imgCupcake" src="./assets/img/cupcake.png" alt="imagen de un cupcake"></a>
         </div>
-    </div>
     </section>
     <!--------------------------footer -------------------------->
     <footer>
@@ -124,9 +127,8 @@
                         <a href=""><img class="redesL" src="./assets/icons/twitter.svg" alt="logo de twitter"></a>
                     </div>
                 </div> 
-                <br>
-
        </div>
     </footer>
+    
 </body>
 </html>

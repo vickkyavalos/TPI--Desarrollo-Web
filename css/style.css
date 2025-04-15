@@ -35,44 +35,68 @@ header {
     justify-content: space-between;
     align-items: center; 
     background-color: var(--color-segundo);
-    padding: 10px 20px;
+    padding: 10px;
 }
-nav{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin: 0 auto; 
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.navegacion {
+#logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
-    font-family: var(--letra-texto);
-    color: black;
-    text-decoration: none;
-    list-style: none; 
-    flex: 1; 
+    background: none;
+    margin: 10px;
 }
-
-.navegacion a {
-    text-decoration: none; 
-    color: black;
-}
-
-#logo {
-    width: 60px;
+/* imagen logo */
+#logo{
+    width: 80px;
     height: auto;
-    margin: 5px;
+    margin-top: 10px;
+    background: none;
+}
+/* barra de navegacion */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    background: none;
 }
 
+.navbar li a {
+    margin-right: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-decoration-style: solid;
+    background: none;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: var(--letra-texto);
+    color: var(--color-letra);
+}
+.navbar li a:hover{
+    background-color: var(--color-fondo);
+    border-radius: 5px;
+    width: 100%;
+}
+/* icono user y su contenedor */
+#icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+}
 
+#icono {
+    width: 40px; 
+    height: auto;
+    margin-left: 10px;
+    background-color: var(--color2);
+}
+/****************************fin del header*******************************/
 /*---Comienza Main----*/
 
 /*---Seccion Portada de inicio---*/
@@ -272,6 +296,14 @@ nav{
 /*fin seccion - catálogo*/
 
 /*********************************** seccion cupcake **********************************/
+.container-cupcake{
+    background-image: url("../assets/img/fondo-cupcake.svg");
+    background-size: cover;
+    background-color: none;
+    background-position: center; 
+    padding: 20px; 
+    width: 100%;
+}
 
 .cupcake{
     padding: 20px;
@@ -283,8 +315,12 @@ nav{
     height: auto;
     display: block; 
     margin: 0 auto; 
+    transition: transform 0.3s ease;
 }
-
+/* efecto hover en img */
+#imgCupcake:hover {
+    transform: scale(1.1); 
+}
 /********************************** footer **********************************/
 footer{
     background-image: url("../assets/img/wave-celeste.svg");;
