@@ -59,9 +59,35 @@ section {
 .card .contenido{
     font-weight:  400;
 }
+/* posicion y tamaño  de nubecita.png */
+.nube {
+        position: relative;
+        top: 100px;
+        right: 280px;
+        width: 200px;
+    }
 
-
-
+   
+.nube1 {
+        position: relative;
+        top: 20px;
+        left: 900px;
+        width: 250px;
+    }
+    
+.nube2 {
+        position: relative;
+        top: 30px;
+        right: 280px;
+        width: 300px;
+    }
+.nube3 {
+        position: relative;
+        top: -20px;
+        left: 900px;
+        width: 290px;
+    }
+ 
 
 footer {
     text-align: center;
