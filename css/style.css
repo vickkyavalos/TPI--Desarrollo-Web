@@ -29,24 +29,34 @@ body{
     color: var(--color-letra);
 }
 /*---Comienza header----*/
-header{
+header, nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
     background-color: var(--color-segundo);
-    padding: 20px;
-}
-
-#logo{
-    width: 70px;
-    height: auto;
-    margin: 5px;
+    padding: 4px;
 }
 
 .navegacion {
     display: flex;
-    gap: 20px;
+    justify-content: center; 
+    align-items: center;
+    justify-items: center;
+    gap: 5px; 
+    font-family: var(--letra-texto);
+    color: black;
+    text-decoration: none;
+    list-style: none; 
+    margin-left: 15px;
+
 }
+
+#logo{
+    width: 60px;
+    height: auto;
+    margin: 5px;
+}
+
 /*---Comienza Main----*/
 
 /*---Seccion Portada de inicio---*/
@@ -246,23 +256,7 @@ header{
 /*fin seccion - catálogo*/
 
 /*********************************** seccion cupcake **********************************/
-/* .container-cupcake{ 
-    --s: 44px;
-    --b: 16px; 
-    --m: 0.4; 
-    
-    background: #008c9e;
-    --R: calc(var(--s)*sqrt(var(--m)*var(--m) + 1) + var(--b)/2);
-    height: calc(2*var(--R));
-    width: 100%;
-    --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
-    mask:
-      radial-gradient(var(--R) at left 50% bottom calc(-1*var(--m)*var(--s)), var(--_g)) 
-       calc(50% - 2*var(--s)) calc(50% - var(--s)/2 - var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x,
-      radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)),var(--_g)) 
-       50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
-  } */
-   
+
 .cupcake{
     padding: 20px;
     margin: 5px;
@@ -276,38 +270,69 @@ header{
 }
 
 /********************************** footer **********************************/
+footer{
+    background-image: url("../assets/img/wave-celeste.svg");;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+    padding: 3px; 
+    text-align: center;
+    margin-top: 0px;
+   
+}
 .footer {
-    background-color:var(--color-segundo);
-    padding: 20px;
-    text-align: center; 
-    font-size: 0; 
+   margin-top: 0px;
   }
-
+  
 .contactanos, .textoFinal, .redes {
     display: inline-block;
     vertical-align: top;
-    width: 33.33%;
-    padding: 10px;
+    width: 350px;
+    padding: 20px 5px 5px 5px; 
     box-sizing: border-box;
-    font-size: 16px; 
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px; 
   }
   
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+
+.logosR {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
   
 .redesL {
     width: 24px;
     height: 24px;
   }
   
-.textoI{
+ 
+.textoI {
+    font-family: var(--letra-texto);
+    text-align: left;
+    margin: 0;
+  }
+  
+  
+#fin {
     font-family: var(--letra-texto);
     text-align: center;
-}
+    margin-top: 110px;
+    font-size: 1rem;
+  }
 
 
-#fin{
-    font-family: var(--letra-texto);
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
-    align-items: end;
-}
+
+
+
