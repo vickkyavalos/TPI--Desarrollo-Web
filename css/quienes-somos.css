@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background: linear-gradient(to bottom right, #cfe3ff, #fbc0d3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition:  all 0.2s ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px5 rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: black;
+}
+
+.card .contenido{
+    font-weight:  400;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 14px;
+    background-color: 
+    #C4DCFD;
+    
+}
+
+footer p{
+    margin: 10px 0;
+}
+.contacto {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.newsletter {
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
