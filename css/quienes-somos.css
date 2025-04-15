@@ -1,8 +1,12 @@
 *{
-    margin: 0;
-    padding:0;
+    box-sizing: border-box;
 }
-
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 section {
     max-width: 900px;
     margin: 0 auto;
@@ -55,3 +59,36 @@ section {
 .card .contenido{
     font-weight:  400;
 }
+
+
+
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 14px;
+    background-color: 
+    #C4DCFD;
+    
+}
+
+footer p{
+    margin: 10px 0;
+}
+.contacto {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.newsletter {
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
