@@ -113,11 +113,14 @@ section {
     border: 3px dashed black ;
 }
 
+/*contenedor de imagen de organigrama*/
 
 .container{
     width: 100%;
     display: flex;
-    max-width: 1100px
+    max-width: 1100px;
+    /*se agrega margin para centrar*/
+    margin: 0 auto;
 }
 
 .card{
@@ -131,7 +134,7 @@ section {
     transition:  all 0.2s ease;
 }
 .card:hover{
-    box-shadow: 5px 5px 20px5 rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
 }
 
@@ -152,12 +155,13 @@ section {
 .card .contenido{
     font-weight:  400;
 }
+
 /* posicion y tamaño  de nubecita.png */
 .nube {
         position: relative;
-        top: 100px;
-        right: 280px;
-        width: 200px;
+        top: 75px;
+        right: -25px;
+        width: -50px;
     }
 
    
@@ -182,8 +186,8 @@ section {
     }
 .nube4 {
         position: relative;
-        top: 20px;
-        left: 950px;
+        top: 100px;
+        left: 1100px;
         width: 310px;
     }
 
