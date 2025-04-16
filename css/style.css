@@ -338,7 +338,6 @@ header {
     height: 430px;
 }
 
-<<<<<<< HEAD
 /*fin seccion - catálogo*/
 
 /*********************************** seccion cupcake **********************************/
@@ -357,7 +356,7 @@ header {
     
 }
 #imgCupcake{
-    width: 320px; 
+    width: 250px; 
     height: auto;
     display: block; 
     margin: 0 auto; 
@@ -434,7 +433,6 @@ footer{
 
 
 
-=======
 .carrusel img{
     width: 0px;
     flex-grow: 1;
@@ -451,4 +449,3 @@ footer{
     filter: contrast(120%);
 }
 /*fin seccion - catálogo*/
->>>>>>> db4a5a8568a053d3aa5c5398b94b92cc9e19d0a9
