@@ -463,12 +463,13 @@ footer{
     font-size: 1rem;
   }
 
+#carrusel{
+    display:flex;
+    width: 220;
+    height: 200;
+}
 
-
-
-
-=======
-.carrusel img{
+#carrusel img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -477,11 +478,11 @@ footer{
     justify-content: center;
 }
 
-.carrusel img:hover{
+#carrusel img:hover{
     cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
 }
+
 /*fin seccion - catálogo*/
->>>>>>> db4a5a8568a053d3aa5c5398b94b92cc9e19d0a9
