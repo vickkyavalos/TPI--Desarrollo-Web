@@ -55,11 +55,11 @@ section {
 }
 
 .figura-geometrica{
-    background-image: url("../assets/img/cuadradorectangulo.png");
+    background-image: url("../assets/img/circulo-triangulo.png");
     background-repeat: no-repeat;
     width: 529px;
     height: 422px;
-    padding: 86px 0 100px 60px ;
+    padding: 40px 0 100px 0px ;
     
 }
 
@@ -69,7 +69,12 @@ section {
 
 .container-portada h1{
     font-family: var(--letra-titulo);
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.container-portada span{
+    padding-left: 150px;
 }
 
 .container-portada p{
@@ -81,15 +86,18 @@ section {
     right:20px;
 }
 
-.container-portada img{
+/*.container-portada img{
     padding-bottom: 60px;
     align-self: center;
     width: 287px;
     height: 345px;
-}
+}*/
 
-.cajadepregunta{
-    width: 200px;
+.cajapregunta{
+    padding-bottom: 60px;
+    align-self: center;
+    width: 350px;
+    height: 350px;
 }
 
 /* se agrega box 1 para configurar bordes personalizados */
@@ -109,12 +117,12 @@ section {
     background: linear-gradient(to bottom right, #cfe3ff, #fbc0d3);
     border-radius: 16px; 
     padding: 40px;
-    margin: 20px ;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0% 150px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     font-family: 'Atma',cursive;
 /*se agrega borde lineas */
-    border: 3px dashed black ;
+    border: 3px dashed rgb(64, 56, 56) ;
 }
 
 /*contenedor de imagen de organigrama*/
@@ -124,7 +132,7 @@ section {
     display: flex;
     max-width: 1100px;
     /*se agrega margin para centrar*/
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .card{
@@ -148,10 +156,12 @@ section {
 }
 .card .contenido{
     padding: 15px;
+    font-family: var(--letra-divertida);
     text-align: center;
 }
 
 .card .contenido p{
+    font-family: var(--letra-divertida);
     line-height: 1.5;
     color: black;
 }
