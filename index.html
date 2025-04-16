@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!--------------------------header -------------------------->
     <header>
-
+        <div id="logo-container">
+            <img id="logo" src="./assets/icons/logo.svg" alt="imagen del logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Contenedor para el icono User -->
+        <div id="icon-container">
+            <a href=""><img id="icono" src="/assets/icons/person-fill.svg" alt="Icono"></a>
+        </div>
     </header>
+    </header>
+
+    <!--------------------------portada -------------------------->
     <main>
         <section class="container-portada">
             <div class="texto-portada figura-geometrica">
@@ -21,12 +38,13 @@
             </div>
             <img src="./assets/img/imagen-de-portada.png" alt="imagen de portada">
         </section>
+        <!--------------------------secciones eventos, tematicas, catalogo -------------------------->
         <section class="container-espacio-secciones">
             <section class="container-seccion linea-top" id="seccion-1-evento">
                 <div class="titulo-seccion linea-titulo" id="titulo-evento">
                 <h2>Eventos</h2>
                 </div>
-                <div class="texto-seccion">
+                <div class="texto-seccion" id="texto-seccion-evento">
                     <div id="subtitulo-seccion-evento">
                         <h3 class="subtitulo">Organiza tu fiesta</h3>
                         <span class="subtitulo">sin preocupaciones</span>
@@ -37,33 +55,135 @@
                     <img class="imagen-seccion" id="img-salon-globos" src="./assets/img/img-collage-eventos.png" alt="salon con globos">
                 </div>
             </section>
+            <!-- tematica -->
             <section class="container-seccion linea-top" id="seccion-2-tematica">
                 <div class="titulo-seccion linea-titulo" id="titulo-tematica">
-                <h2>Temática</h2>
-                </div>
-                <div class="texto-seccion">
-                    <h3 class="subtitulo"></h3>
-                    <p class="parrafo"></p>
-                </div>
-                <div class="imagen-seccion"></div>            
+                    <h2>Temática</h2>
+                    </div>
+                    <div class="texto-seccion" id="texto-seccion-tematica">
+                        <div id="subtitulo-seccion-tematica">
+                            <h3 class="subtitulo">Eventos
+                            <span class="subtitulo">Infantiles</span></h3>
+                        </div>
+                        <p class="parrafo">Desde fiestas mágicas con princesas y superhéroes hasta aventuras espaciales. Elige la que más te guste y crea una experiencia única llena de diversión y sorpresas
+                        </p>
+                    </div>    
+                    <div class="container-img">
+                        <img class="imagen-seccion" id="img-super" src="/assets/img/ninios-superheroes.png" alt="temática de niños superheroes">
+                    </div> 
+                
+                    <!-- catalogo -->      
             </section>
             <section class="container-seccion linea-top" id="seccion-3-catalogo">
                 <div class="titulo-seccion linea-titulo" id="titulo-catalogo">
                 <h2>catalogo</h2>
                 </div>
+                <div class="card-salon">
+                    <img src="salon1.jpg" alt="Salón Pequeños Gigantes">
+                    <div class="card-info">
+                      <h3>Pequeños Gigantes</h3>
+                      <p class="descripcion">Salón con inflables, pelotero y espacio al aire libre.</p>
+                      <p class="direccion"><strong>Dirección:</strong> Sarmiento 1234</p>
+                      <p class="valor"><strong>Precio:</strong> $105.000</p>
+                      <p class="estado disponible">🟢 Disponible</p>
+                      <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="card-salon">
+                    <img src="salon1.jpg" alt="Salón Pequeños Gigantes">
+                    <div class="card-info">
+                      <h3>Pequeños Gigantes</h3>
+                      <p class="descripcion">Salón con inflables, pelotero y espacio al aire libre.</p>
+                      <p class="direccion"><strong>Dirección:</strong> Sarmiento 1234</p>
+                      <p class="valor"><strong>Precio:</strong> $105.000</p>
+                      <p class="estado disponible">🟢 Disponible</p>
+                      <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="card-salon">
+                    <img src="salon1.jpg" alt="Salón Pequeños Gigantes">
+                    <div class="card-info">
+                      <h3>Pequeños Gigantes</h3>
+                      <p class="descripcion">Salón con inflables, pelotero y espacio al aire libre.</p>
+                      <p class="direccion"><strong>Dirección:</strong> Sarmiento 1234</p>
+                      <p class="valor"><strong>Precio:</strong> $105.000</p>
+                      <p class="estado disponible">🟢 Disponible</p>
+                      <button>Ver más</button>
+                    </div>
                 <div class="carrusel">
                     <img src="./assets/img/unicorn-cake.jpg" alt="cake">
                     <img src="./assets/img/burbuja-kid.jpg" alt="kid">
                     <img src="./assets/img/pelotas-colores.jpg" alt="colores">
                 </div>
+                <div class="card-salon">
+                    <img src="salon1.jpg" alt="Salón Pequeños Gigantes">
+                    <div class="card-info">
+                      <h3>Pequeños Gigantes</h3>
+                      <p class="descripcion">Salón con inflables, pelotero y espacio al aire libre.</p>
+                      <p class="direccion"><strong>Dirección:</strong> Sarmiento 1234</p>
+                      <p class="valor"><strong>Precio:</strong> $105.000</p>
+                      <p class="estado disponible">🟢 Disponible</p>
+                      <button>Ver más</button>
+                    </div>
+                </div>    >                
+
                 
             </section>
-
-
+        </section>
+     <!--------------------------seccion cupcake -------------------------->
+        <section class="container-cupcake">
+            <div class="cupcake">
+                <a href=""><img id="imgCupcake" src="./assets/img/cupcake.png" alt="imagen de un cupcake"></a>
+            </div>
         </section>
     </main>
-    <footer>
+     
+    <!--------------------------footer -------------------------->
+    <footer> 
+        
+        <!-- contactanos -->
+        <div class="footer">
+            <div class="contactanos">
+                <div class="textf">
+                    <p class="textoI">Contactanos</p>
+                <br>
+                </div> 
+                <div class="logo">
+                    <img class="redesL" src="./assets/icons/email.svg" alt="logo de email">
+                    <p class="textoI">idwaS_A2025@gmail.com</p>
+                </div>
+                <div class="logo">
+                    <img class="redesL" src="./assets/icons/phone.svg" alt="logo">
+                    <p class="textoI">1122565213</p>
+                </div>
+                <div class="logo">
+                    <img class="redesL" src="./assets/icons/whatsapp.svg" alt="logo de whatsapp">
+                    <p class="textoI">345154321</p>
+                </div>
+            </div>
 
+            <div class="textoFinal">
+                <p id="fin">© 2025 IDW S.A</p>
+            </div>
+
+            <!-- redes sociales -->
+                <div class="redes">
+                    <div class="textf">
+                        <p class="textoI">Nuestras Redes</p>
+                    <br>
+
+                    <div class="logosR">
+                        <a href=""><img class="redesL" src="./assets/icons/facebook.svg" alt="logo de facebook"></a>
+                    </div>
+                    <div class="logosR">
+                        <a href=""><img class="redesL" src="./assets/icons/instagram.svg" alt="logo de instagram"></a>
+                    </div>
+                    <div class="logosR">
+                        <a href=""><img class="redesL" src="./assets/icons/twitter.svg" alt="logo de twitter"></a>
+                    </div>
+                </div> 
+       </div>
     </footer>
+    
 </body>
 </html>
