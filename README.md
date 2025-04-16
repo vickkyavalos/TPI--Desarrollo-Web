@@ -12,5 +12,33 @@ Grupo 47
 ● Estrella Cardozo
 
 ● Bertorello Santiago Nicolas
+# 🌐 TPI Desarrollo Web
 
-TPI-DESARROLLO-WEB/ │ ├── index.html # Página principal del sitio │ ├── templates/ # Vistas HTML adicionales (por ejemplo, contacto, nosotros, etc.) │ ├── contacto.html │ └── nosotros.html │ ├── css/ # Hojas de estilo del sitio │ └── styles.css │ ├── assets/ # Recursos multimedia del proyecto │ ├── img/ # Imágenes generales │ │ ├── logo.png │ │ ├── fondo.jpg │ │ └── ... # Otras imágenes │ └── icons/ # Íconos SVG utilizados en la interfaz │ ├── menu.svg │ └── user.svg
+Proyecto final de la materia *Introducción al Desarrollo Web* – UTN & ISPC  
+Sitio web responsive hecho en HTML5, CSS3 y JavaScript.
+
+---
+
+## 📁 Estructura del Proyecto
+
+```plaintext
+TPI-DESARROLLO-WEB/
+│
+├── index.html                # Página principal del sitio
+│
+├── templates/                # Vistas HTML secundarias (Contacto, Nosotros, etc.)
+│   ├── contacto.html
+│   └── nosotros.html
+│
+├── css/                      # Hojas de estilo del sitio
+│   └── styles.css
+│
+├── assets/                   # Recursos multimedia
+│   ├── img/                  # Imágenes generales del sitio
+│   │   ├── logo.png
+│   │   ├── fondo.jpg
+│   │   └── ...               # Otras imágenes
+│   └── icons/                # Íconos SVG utilizados
+│       ├── menu.svg
+│       └── user.svg
+
