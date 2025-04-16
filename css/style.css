@@ -108,6 +108,7 @@ header {
 
 .figura-geometrica{
     background-image: url("../assets/img/cuadrado-y-circulo.png");
+    background-size: contain;
     background-repeat: no-repeat;
     width: 529px;
     height: 422px;
@@ -121,6 +122,7 @@ header {
 
 .container-portada h1{
     font-family: var(--letra-titulo);
+    font-weight: 400;
     font-size: 4rem;
 }
 
@@ -128,9 +130,10 @@ header {
     font-family: var(--letra-divertida);
     font-weight: 300;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     position: relative;
-    right:20px;
+    right:10%;
+    
 }
 
 .container-portada img{
@@ -160,7 +163,7 @@ header {
     align-content: center;
     
 }
-/*Titulos sobresalientes de las secciones afectando de manera general(eventos-tematica-catalogo)*/
+/*Titulos (h2)sobresalientes de las secciones afectando de manera general(eventos-tematica-catalogo)*/
 .titulo-seccion h2{
     font-size: 3.20rem;
     font-family: var(--letra-subtitulo);
@@ -178,14 +181,23 @@ header {
     
     
 }
+/*posicionamiento de texto en cada seccion de manera general(evento-tematica-catalogo) */
+.texto-seccion{
+    display: flex; 
+    flex-direction: column;
+    align-self: center;
+    justify-content: center; 
+    /*align-items se maneja de manera particular por id*/
+    width: 620px;
+    
+}
 /* tipografía Subtitulos(h3) de cada seccion*/
 .subtitulo{
     font-family: var(--letra-subtitulo);
-    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 /*tipografía parrafo de cada seccion*/
 .parrafo{
@@ -210,6 +222,7 @@ header {
     background-image: url("../assets/img/lineas-en-titulos.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 -20%;
     
 }
 
@@ -221,21 +234,19 @@ header {
 #seccion-1-evento{
    background-color: var(--color-primero);
    justify-content: space-around;
-   gap: 40px;
+   gap: 15px;
 
 }
 #titulo-evento{
     background-color: var(--color-primero);
 
 }
-.texto-seccion{
+#texto-seccion-evento{
+    align-items: start;
     margin-left: 40px;
-    margin-bottom: 55px;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    justify-content: space-around;
+    margin-bottom: 55px; 
     gap: 40px;
+    text-align: start;
 }
 
 #subtitulo-seccion-evento h3, span{
@@ -272,49 +283,57 @@ header {
 
 #seccion-2-tematica{
     background-color: var(--color-segundo);
+    justify-content: space-around;
+    gap: 80px;
+    flex-direction: row-reverse;
 }
 
-#seccion-2-tematica{
+/*titulo tematica que sobre sale*/
+#titulo-tematica{
     background-color: var(--color-segundo);
+    left: 250px;
 }
 
-.texto-seccion-tematica {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px; 
-    flex-wrap: wrap; 
-    width: 950px;
-    margin-right: 300px;
 
+#img-super{
+
+    mask: linear-gradient(#000000 70%, transparent);
+    mask: radial-gradient(circle at bottom,#0000 25px, #000 25px);
+    mask-size: 12% 100%;
 }
 
-.cCard1, .cCard2 {
-    width: 220px; 
-    height: 150px; 
+#texto-seccion-tematica {
+    align-items: end ;
+    text-align: end;
+    gap: 80px;
+    margin-bottom: 30px; 
+    margin-right: 30px;
+    
+}
+#texto-seccion-tematica p{
+    margin-right: 10px;
+}
+
+#subtitulo-seccion-tematica h3{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px; 
-    font-family: var(--letra-subtitulo);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 10px;
+    flex-direction: row;
+    width: 504px; 
+    height: 148px;
+    text-align: end;
+    margin-bottom: 30px;
 }
-
-.cCard1 {
-   background-color: transparent; 
-   border: 2px solid var(--color-cuarto); }
-.cCard1 h3{
-    margin-bottom: 70px;
-}
-.cCard2 h3{
-    margin-top: 70px;
-    font-family: var(--letra-texto);
-    font-weight: 200;
-}
-.cCard2 {
-    background-color: var(--color-cuarto); 
+#subtitulo-seccion-tematica span{
+    align-content: end;
+    border-radius: 20px;
+    width: 297px;
+    height: auto;
+    text-align: start;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-weight: 300;
+    background-color: var(--color-cuarto);
+    
 }
 
 /*fin seccion - temática*/
@@ -327,7 +346,7 @@ header {
 
 #titulo-catalogo{
     background-color: var(--color-tercero);
-    left: 450px;
+    left: 500px;
 
 }
 
@@ -338,8 +357,7 @@ header {
     background-image: url("../assets/img/fondo-cupcake.svg");
     background-size: cover;
     background-color: none;
-    background-position: center; 
-    padding: 20px; 
+    background-position: center;  
     width: 100%;
 }
 
@@ -383,7 +401,7 @@ footer{
     font-size: 16px;
     text-align: center;
     margin-top: 20px; 
-  }
+}
   
 .logo {
     display: flex;
