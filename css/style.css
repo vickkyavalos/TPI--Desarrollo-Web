@@ -462,28 +462,7 @@ footer{
     font-size: 1rem;
   }
 
- /*#carrusel{
-    display: flex;
-    width: 600;
-    height: 430;
-    
-}
-
-#carrusel img{
-    width: 160px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-    justify-content: center;
-}
-
-#carrusel img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}*/
+ *
 
 
 .contenedor-imagen {
