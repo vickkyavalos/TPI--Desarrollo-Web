@@ -346,7 +346,6 @@ header {
     background-size: cover;
     background-color: none;
     background-position: center; 
-    padding: 20px; 
     width: 100%;
 }
 
@@ -375,11 +374,10 @@ footer{
     padding: 3px; 
     text-align: center;
     margin-top: 0px;
-   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.footer {
-   margin-top: 0px;
-  }
   
 .contactanos, .textoFinal, .redes {
     display: inline-block;
@@ -391,8 +389,8 @@ footer{
     text-align: center;
     margin-top: 20px; 
   }
-  
-.logo {
+
+ .logo /*{ de la seccion contactanos */{
     display: flex;
     align-items: center;
     gap: 5px;
