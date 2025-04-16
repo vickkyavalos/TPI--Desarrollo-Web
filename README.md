@@ -15,7 +15,7 @@ Grupo 47
 # 🌐 TPI Desarrollo Web
 
 Proyecto final de la materia *Introducción al Desarrollo Web* – UNER 
-Sitio web responsive hecho en HTML5 Y CSS3 
+Sitio web hecho en HTML5 Y CSS3 
 
 ---
 
