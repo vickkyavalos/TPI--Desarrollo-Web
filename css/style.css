@@ -226,6 +226,16 @@ header {
     
 }
 
+.container-img{
+   width: 100%;
+   max-width: 500px;
+}
+
+.imagen-seccion{
+   width: 100%;
+   height: auto;
+}
+
 /*--FIN de los estilos de las secciones en general(evento-tematica-catalogo)--*/
 
 
@@ -235,8 +245,8 @@ header {
    background-color: var(--color-primero);
    justify-content: space-around;
    gap: 15px;
-
 }
+
 #titulo-evento{
     background-color: var(--color-primero);
 
@@ -250,7 +260,6 @@ header {
 }
 
 #subtitulo-seccion-evento h3, span{
-
     width: fit-content;
     background-color: var(--color-sexto);
 }
@@ -263,21 +272,44 @@ header {
     width: 600px;
 }
 
+.contenedor-imagen {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: #555; /* Solo para referencia */
+  }
 
-.container-img{
-   width: 100%;
-   max-width: 500px;
-   
+  .imagen {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+
+.imagen:hover{
+    transform: scale(1.2);
 }
 
-.imagen-seccion{
-   width: 100%;
-   height: auto;
-   
-}
+ .img1 {
+    top: 110px;
+    right: 0;
+    z-index: 1;
+  }
 
+  .img2 {
+    top: 100;
+    right: 150px;
+    z-index: 2;
+  }
 
-/*fin seccion - evento*/
+  .img3 {
+    top: 180px;
+    right:80px;
+    z-index: 3;
+  }
+/*fin seccion - catálogo*/
 
 /*-----segunda seccion - temática-----*/
 
@@ -403,15 +435,7 @@ header {
 #titulo-catalogo{
     background-color: var(--color-tercero);
     left: 500px;
-
-} 
-/* galeria carrusel */
-
-/* .carrusel{
-    display: flex;
-    width: 600px;
-    height: 430px;
-} */
+}
 
 /*fin seccion - catálogo*/
 
@@ -463,8 +487,8 @@ footer{
     font-size: 16px;
     text-align: center;
     margin-top: 20px; 
-  }
-
+}
+  
 .logo {
     display: flex;
     align-items: center;
@@ -505,20 +529,3 @@ footer{
 
 
 
-
-.carrusel img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-    justify-content: center;
-}
-
-.carrusel img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-/*fin seccion - catálogo*/
