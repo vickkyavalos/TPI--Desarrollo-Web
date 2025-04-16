@@ -339,7 +339,62 @@ header {
 /*fin seccion - temática*/
 
 /*-----tercera seccion - catálogo------*/
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+    margin: 40px auto;
+}
 
+.card{
+    width: 300px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition:  all 0.2s ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 20px;
+    font-family: var(--letra-divertida);
+    text-align: center;
+}
+
+.card .contenido p{
+    font-family: var(--letra-divertida);
+    line-height: 1.5;
+    color: black;
+}
+
+.card .contenido{
+    font-weight:  400;
+}
+.flecha{
+    width: 50px;
+    height: auto;
+    margin-top: 250px;
+}
+.btn-mas{
+    width: 80px;
+    height: 40px;
+    font-family: var(--letra-titulo);
+    font-size: 1rem;
+    background-color: var(--color-sexto);
+    border-radius: 15px;
+    border-color: var(--color-septimo);
+    margin: 5px;
+}
 #seccion-3-catalogo{
     background-color: var(--color-tercero);
     justify-content: center;
@@ -349,13 +404,14 @@ header {
     background-color: var(--color-tercero);
     left: 500px;
 
-}
+} 
 /* galeria carrusel */
-.carrusel{
+
+/* .carrusel{
     display: flex;
     width: 600px;
     height: 430px;
-}
+} */
 
 /*fin seccion - catálogo*/
 
@@ -409,9 +465,6 @@ footer{
     margin-top: 20px; 
   }
 
- .logo /*{ de la seccion contactanos */{
-}
-  
 .logo {
     display: flex;
     align-items: center;
