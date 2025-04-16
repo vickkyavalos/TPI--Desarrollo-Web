@@ -30,11 +30,81 @@ body{
     color: var(--color-letra);
 }
 
+/****************************header*******************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--color-segundo);
+    padding: 10px;
+}
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin: 10px;
+}
+/* imagen logo */
+#logo{
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    background: none;
+}
+/* barra de navegacion */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    background: none;
+}
+
+.navbar li a {
+    margin-right: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-decoration-style: solid;
+    background: none;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: var(--letra-texto);
+    color: var(--color-letra);
+}
+.navbar li a:hover{
+    background-color: var(--color-fondo);
+    border-radius: 5px;
+    width: 100%;
+}
+/* icono user y su contenedor */
+#icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+}
+
+#icono {
+    width: 40px; 
+    height: auto;
+    margin-left: 10px;
+    background-color: var(--color2);
+}
+/****************************fin del header*******************************/
+/*EMPIEZA MAIN */
 /* formulario */
 
 .container-formulario {
     margin-top: 8rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: var(--letra-titulo);
     gap: 15px;
@@ -45,6 +115,7 @@ body{
 .formulario {
     display: flex;
     flex-direction: column;
+    align-self: center ;
     height: 600px;
     width: 800px;
     background: linear-gradient(to bottom right, #cfe3ff, #fbc0d3);
@@ -53,39 +124,39 @@ body{
     padding: 40px 20px;
     background: linear-gradient(145deg, #e8f0ff, #ffd6f5); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
+    
     
 }
-
-.formulario-titulo h2{
+.formulario-h2{
+    display: flex;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    position:relative;
+    
+}
+.formulario-titulo{
+    padding: 20px 20px 20px 20px; 
     font-size: 2rem;
     font-family: var(--letra-titulo);
     font-weight: 300;
     font-style: normal;
-    
-}
-.formulario-titulo{
     height: fit-content;
-    z-index: 1;
-    position: absolute;
-    top: 6.5%;
-    left: 45%;
-    padding: 20px 20px 20px 20px; 
-    border-radius: 30px 30px 0 0;  
+    align-self: center;
+
 }
+
 
 .formulario-subtitulos {
     margin-top: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
-
     font-size: 1rem;
     font-weight: 200;
     font-style: normal;
-
     padding-bottom: 20px;
 
 }
@@ -93,7 +164,6 @@ body{
 /* color cosito */
 #titulo-evento{
     background: linear-gradient(to bottom right, #cfe3ff, #fbc0d3);
-
 }
 
 
@@ -204,5 +274,70 @@ textarea {
     font-weight: 500;
     font-size: 0.9rem;
 }
+
+/********************************** footer **********************************/
+footer{
+    background-image: url("../assets/img/wave-celeste.svg");;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+    padding: 3px; 
+    text-align: center;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.contactanos, .textoFinal, .redes {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    padding: 20px 5px 5px 5px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px; 
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+
+.logosR {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+  
+.redesL {
+    width: 24px;
+    height: 24px;
+  }
+  
+ 
+.textoI {
+    font-family: var(--letra-texto);
+    text-align: left;
+    margin: 0;
+  }
+  
+  
+#fin {
+    font-family: var(--letra-texto);
+    text-align: center;
+    margin-top: 110px;
+    font-size: 1rem;
+  }
+
+
+
 
 
