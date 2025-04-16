@@ -14,8 +14,8 @@ Grupo 47
 ● Bertorello Santiago Nicolas
 # 🌐 TPI Desarrollo Web
 
-Proyecto final de la materia *Introducción al Desarrollo Web* – UTN & ISPC  
-Sitio web responsive hecho en HTML5, CSS3 y JavaScript.
+Proyecto final de la materia *Introducción al Desarrollo Web* – UNER 
+Sitio web responsive hecho en HTML5 Y CSS3 
 
 ---
 
