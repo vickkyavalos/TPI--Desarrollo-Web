@@ -350,7 +350,7 @@ header {
     left: 500px;
 
 }
-/* galeria carrusel */
+/* galeria carrusel
 .carrusel{
     display: flex;
     width: 600px;
@@ -371,7 +371,7 @@ header {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
-}
+} */
 /*fin seccion - catálogo*/
 
 /*********************************** seccion cupcake **********************************/
