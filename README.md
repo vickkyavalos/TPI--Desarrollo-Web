@@ -1,4 +1,4 @@
-# TPI-Desarrollo-Web
+# 🌐 TPI Desarrollo Web
 Grupo 47
 
 ## Integrantes
@@ -12,7 +12,7 @@ Grupo 47
 ● Estrella Cardozo
 
 ● Bertorello Santiago Nicolas
-# 🌐 TPI Desarrollo Web
+
 
 Proyecto final de la materia *Introducción al Desarrollo Web* – UNER 
 Sitio web hecho en HTML5 Y CSS3 
