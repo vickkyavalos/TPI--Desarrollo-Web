@@ -323,6 +323,7 @@ header {
 
 #seccion-3-catalogo{
     background-color: var(--color-tercero);
+    justify-content: center;
 }
 
 #titulo-catalogo{
@@ -330,7 +331,14 @@ header {
     left: 450px;
 
 }
+/* galeria carrusel */
+.carrusel{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
 
+<<<<<<< HEAD
 /*fin seccion - catálogo*/
 
 /*********************************** seccion cupcake **********************************/
@@ -426,3 +434,21 @@ footer{
 
 
 
+=======
+.carrusel img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    justify-content: center;
+}
+
+.carrusel img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/*fin seccion - catálogo*/
+>>>>>>> db4a5a8568a053d3aa5c5398b94b92cc9e19d0a9
