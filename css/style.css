@@ -29,6 +29,74 @@ body{
     color: var(--color-letra);
 }
 
+/****************************header*******************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--color-segundo);
+    padding: 10px;
+}
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin: 10px;
+}
+/* imagen logo */
+#logo{
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    background: none;
+}
+/* barra de navegacion */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    background: none;
+}
+
+.navbar li a {
+    margin-right: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-decoration-style: solid;
+    background: none;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: var(--letra-texto);
+    color: var(--color-letra);
+}
+.navbar li a:hover{
+    background-color: var(--color-fondo);
+    border-radius: 5px;
+    width: 100%;
+}
+/* icono user y su contenedor */
+#icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+}
+
+#icono {
+    width: 40px; 
+    height: auto;
+    margin-left: 10px;
+    background-color: var(--color2);
+}
+/****************************fin del header*******************************/
 /*---Comienza Main----*/
 
 /*---Seccion Portada de inicio---*/
@@ -198,8 +266,6 @@ body{
 }
 
 
-
-
 /*fin seccion - evento*/
 
 /*-----segunda seccion - temática-----*/
@@ -208,9 +274,47 @@ body{
     background-color: var(--color-segundo);
 }
 
-#titulo-tematica{
+#seccion-2-tematica{
     background-color: var(--color-segundo);
-    left: 200px;
+}
+
+.texto-seccion-tematica {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    width: 950px;
+    margin-right: 300px;
+
+}
+
+.cCard1, .cCard2 {
+    width: 220px; 
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    font-family: var(--letra-subtitulo);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.cCard1 {
+   background-color: transparent; 
+   border: 2px solid var(--color-cuarto); }
+.cCard1 h3{
+    margin-bottom: 70px;
+}
+.cCard2 h3{
+    margin-top: 70px;
+    font-family: var(--letra-texto);
+    font-weight: 200;
+}
+.cCard2 {
+    background-color: var(--color-cuarto); 
 }
 
 /*fin seccion - temática*/
@@ -228,3 +332,97 @@ body{
 }
 
 /*fin seccion - catálogo*/
+
+/*********************************** seccion cupcake **********************************/
+.container-cupcake{
+    background-image: url("../assets/img/fondo-cupcake.svg");
+    background-size: cover;
+    background-color: none;
+    background-position: center; 
+    padding: 20px; 
+    width: 100%;
+}
+
+.cupcake{
+    padding: 20px;
+    margin: 5px;
+    
+}
+#imgCupcake{
+    width: 320px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease;
+}
+/* efecto hover en img */
+#imgCupcake:hover {
+    transform: scale(1.1); 
+}
+/********************************** footer **********************************/
+footer{
+    background-image: url("../assets/img/wave-celeste.svg");;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+    padding: 3px; 
+    text-align: center;
+    margin-top: 0px;
+   
+}
+.footer {
+   margin-top: 0px;
+  }
+  
+.contactanos, .textoFinal, .redes {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    padding: 20px 5px 5px 5px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+
+.logosR {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+  
+.redesL {
+    width: 24px;
+    height: 24px;
+  }
+  
+ 
+.textoI {
+    font-family: var(--letra-texto);
+    text-align: left;
+    margin: 0;
+  }
+  
+  
+#fin {
+    font-family: var(--letra-texto);
+    text-align: center;
+    margin-top: 110px;
+    font-size: 1rem;
+  }
+
+
+
+
+
